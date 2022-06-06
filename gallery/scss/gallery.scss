@@ -1,0 +1,130 @@
+.gallery {
+    max-width: 980px;
+    min-height: 378px;
+    margin: 150px auto 0 auto;
+
+
+    span {
+        font-size: 25px;
+        font-family: Gill;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        border-bottom: solid 3px black;
+        padding-right: 100px;
+        padding-bottom: 20px;
+    }
+
+
+    .gallery-images {
+        margin-top: 50px;
+        
+
+        div {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+
+        .rowone {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            
+
+            .imageone {
+                width: 489px;
+                height: 187px;
+                background-image: linear-gradient(rgba(255, 209, 64, 0.7) rgba(255, 209, 64, 0.7)), url(/images/1.png);
+            }
+
+
+            .imagetwo {
+                width: 187px;
+                height: 187px;
+                background-image: linear-gradient(rgba(238, 67, 103, 0.7) rgba(238, 67, 103, 0.7)), url(/images/2.jpeg);
+            }
+
+
+            .imagethree {
+                width: 265px;
+                height: 187px;
+                background-image: linear-gradient(rgba(8, 173, 105, 0.7) rgba(8, 173, 105, 0.7)), url(/images/3.jpg);
+            }
+        }
+
+
+        .rowtwo {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 150px;
+
+
+            .image1 {
+                width: 603px;
+                height: 306px;
+                background-image: linear-gradient(rgba(84, 13, 110, 0.7) rgba(8, 173, 105, 0.7)), url(/images/4.jpg);
+            }
+
+
+            .image2 {
+                width: 355px;
+                height: 306px;
+                background-image: linear-gradient(rgba(59, 206, 171, 0.7) rgba(8, 173, 105, 0.7)), url(/images/5.png);
+            }
+        }
+    }
+}
+
+
+@media (max-width: 950px) {
+
+    .gallery {
+        
+        span {
+            margin: auto;
+            display: table;
+            padding-right: 0;
+        }
+
+        .gallery-images {
+
+
+            .rowone {
+                display: block;
+
+
+                .imageone {
+                    margin: 0 auto 20px auto;
+                    width: 400px;
+                }
+
+                .imagetwo {
+                    margin: 0 auto 20px auto;
+                    width: 400px;
+                }
+
+                .imagethree {
+                    margin: 0 auto 20px auto;
+                    width: 400px;
+                }
+            }
+
+            
+            .rowtwo {
+                display: block;
+
+                
+                .image1 {
+                    margin: 0 auto 20px auto;
+                    width: 400px;
+                }
+
+                .image2 {
+                    margin: 0 auto 20px auto;
+                    width: 400px;
+                }
+            }
+        }
+    }
+}

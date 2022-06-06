@@ -1,0 +1,116 @@
+.hero {
+    background-image: linear-gradient(rgba(255, 209, 64, .6), rgba(255, 209, 64, .6)), url(../images/1.png);
+    max-width: 980px;
+    min-height: 378px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px auto 0 auto;
+    position: relative;
+
+
+    .hero-title {
+        max-width: 980px;
+        min-height: auto;
+        position: absolute;
+        bottom: -2px;
+        align-items: center;
+
+
+        .title-i {
+            font-size: 300px;
+            line-height: 0;
+            margin-right: 20px;
+            margin-left: -40px;
+            font-family: Gill;
+            color: #FFD140;
+            letter-spacing: 40px;
+        }
+
+
+        .title-food{
+            font-size: 140px;
+            line-height: 0;
+            font-family: Gill;
+            color: #FFD140;
+            margin: auto auto auto -60px;
+        }
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .hero {
+        margin-left: 75px;
+        margin-right: 75px;
+
+
+        .hero-title {
+            padding-left: 30px;
+
+
+            .title-i {
+                font-size: 150px;
+            }
+
+
+            .title-food {
+                font-size: 120px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 908px) {
+    .hero {
+        margin-left: 75px;
+        margin-right: 75px;
+
+
+        .hero-title {
+            padding-left: 30px;
+            
+
+            .title-i {
+                font-size: 140px;
+                letter-spacing: 20px;
+            }
+
+
+            .title-food {
+                font-size: 100px;
+                margin: auto auto auto -40px;
+
+            }
+        }
+    }
+}
+
+
+@media (max-width: 774px) {
+    .hero {
+        margin-left: 75px;
+        margin-right: 75px;
+
+
+        .hero-title {
+            padding-left: 40px;
+
+
+            .title-i {
+                font-size: 90px;
+                letter-spacing: 10px;
+            }
+
+
+            .title-food {
+                font-size: 50px;
+                margin: auto auto auto -30px;
+            }
+        }
+    }
+}

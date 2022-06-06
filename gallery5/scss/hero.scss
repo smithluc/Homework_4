@@ -1,0 +1,114 @@
+.hero {
+    background-image: linear-gradient(rgba(59, 206, 171, .7), rgba(59, 206, 171, .7)), url(../images/5.png);
+    max-width: 980px;
+    min-height: 378px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px auto 0 auto;
+    position: relative;
+
+
+    .hero-title {
+        max-width: 980px;
+        min-height: auto;
+        position: absolute;
+        bottom: -3px;
+        left: 1px;
+
+
+        .title-i {
+            font-size: 300px;
+            line-height: 0;
+            font-family: Gill;
+            color: #3BCEAB;
+            letter-spacing: 5px;
+            padding-right: 25px;
+        }
+
+
+        .title-food{
+            font-size: 115px;
+            line-height: 0;
+            font-family: Gill;
+            color: #3BCEAB;
+        }
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .hero {
+        margin-left: 75px;
+        margin-right: 75px;
+
+
+        .hero-title {
+            padding-left: 0;
+
+
+            .title-i {
+                font-size: 150px;
+            }
+
+
+            .title-food {
+                font-size: 105px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 908px) {
+    .hero {
+        margin-left: 75px;
+        margin-right: 75px;
+
+
+        .hero-title {
+            padding-left: 0;
+            
+
+            .title-i {
+                font-size: 140px;
+                letter-spacing: 20px;
+            }
+
+
+            .title-food {
+                font-size: 85px;
+                margin: auto auto auto -40px;
+
+            }
+        }
+    }
+}
+
+
+@media (max-width: 774px) {
+    .hero {
+        margin-left: 75px;
+        margin-right: 75px;
+
+
+        .hero-title {
+            padding-left: 0;
+
+
+            .title-i {
+                font-size: 90px;
+                letter-spacing: 10px;
+            }
+
+
+            .title-food {
+                font-size: 40px;
+                margin: auto auto auto -30px;
+            }
+        }
+    }
+}

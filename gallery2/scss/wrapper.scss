@@ -1,0 +1,37 @@
+.wrapper {
+    max-width: 980px;
+    min-height: 200px;
+    margin: 0 auto;
+
+
+    .row {
+        display: flex;
+        font-family: GillLightitalic;
+        font-size: 16px;
+        letter-spacing: 1px;
+        padding-top: 50px;
+        padding-bottom: 180px;
+    }
+
+
+        .col1 {
+            flex: 1;
+            padding-right: 10px;
+        }
+
+        .col2 {
+            flex: 1;
+            padding-left: 60px;
+        }
+}
+
+
+@media (max-width: 1000px) {
+    .wrapper {
+
+
+        .row {
+            margin: auto 75px
+        }
+    }
+}

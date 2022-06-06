@@ -1,0 +1,55 @@
+.nav-wrapper {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+
+    nav {
+        max-width: 980px;
+        height: 90px;
+        margin: 0 auto 75px auto;
+        border-bottom: solid 3px black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        letter-spacing: 2px;
+
+        .logo {
+            width: 92px;
+            height: 38px;
+
+            span {
+                bottom: -6px;
+                color: black;
+                font-family: Gill;
+                font-size: 20px;
+                width: 73px;
+                height: 23px;
+            }
+        }
+
+        .links {
+            width: 350px;
+            display: flex;
+            justify-content: space-around;
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-family: Gill;
+                font-size: 15px;
+            }
+
+            span {
+                color: #ee4367;
+            }
+        }
+    }
+}
+
+
+@media only all and (max-width: 980px) {
+    nav {
+        padding: 0 30px;
+    }
+}

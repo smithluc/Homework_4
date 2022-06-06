@@ -1,0 +1,429 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Gillbold;
+  src: url(fonts/GillSans-Bold.ttf);
+}
+@font-face {
+  font-family: Gillbolditalic;
+  src: url(fonts/GillSans-BoldItalic.ttf);
+}
+@font-face {
+  font-family: Gillitalic;
+  src: url(fonts/GillSans-Italic.ttf);
+}
+@font-face {
+  font-family: GillLight;
+  src: url(fonts/GillSans-Light.ttf);
+}
+@font-face {
+  font-family: GillLightitalic;
+  src: url(fonts/GillSans-LightItalic.ttf);
+}
+@font-face {
+  font-family: Gillsemibold;
+  src: url(fonts/GillSans-SemiBold.ttf);
+}
+@font-face {
+  font-family: Gillsemibolditalic;
+  src: url(fonts/GillSans-SemiBoldItalic.ttf);
+}
+@font-face {
+  font-family: Gillultrabold;
+  src: url(fonts/GillSans-UltraBold.ttf);
+}
+@font-face {
+  font-family: Gill;
+  src: url(fonts/GillSans.ttf);
+}
+@font-face {
+  font-family: Serifbold;
+  src: url(fonts/PTSerif-Bold.ttf);
+}
+@font-face {
+  font-family: Serifbolditalic;
+  src: url(fonts/PTSerif-BoldItalic.ttf);
+}
+@font-face {
+  font-family: Serifitalic;
+  src: url(fonts/PTSerif-Italic.ttf);
+}
+@font-face {
+  font-family: Serifreg;
+  src: url(fonts/PTSerif-Regular.ttf);
+}
+.nav-wrapper {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+.nav-wrapper nav {
+  max-width: 980px;
+  height: 90px;
+  margin: 0 auto 75px auto;
+  border-bottom: solid 3px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 2px;
+}
+.nav-wrapper nav .logo {
+  width: 92px;
+  height: 38px;
+}
+.nav-wrapper nav .logo span {
+  bottom: -6px;
+  color: black;
+  font-family: Gill;
+  font-size: 20px;
+  width: 73px;
+  height: 23px;
+}
+.nav-wrapper nav .links {
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.nav-wrapper nav .links a {
+  text-decoration: none;
+  color: black;
+  font-family: Gill;
+  font-size: 15px;
+}
+.nav-wrapper nav .links span {
+  color: #ee4367;
+}
+
+@media only all and (max-width: 980px) {
+  nav {
+    padding: 0 30px;
+  }
+}
+footer {
+  height: 450px;
+  background-color: #ee4367;
+  margin-top: -75px;
+}
+footer .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 35px;
+}
+footer .addy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Gill;
+  font-size: 16px;
+  font-weight: 100;
+  color: white;
+  padding-top: 50px;
+  margin: auto auto 5px auto;
+}
+footer .number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Gill;
+  font-size: 16px;
+  font-weight: 100;
+  color: white;
+  margin: auto auto 5px auto;
+}
+footer .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Gill;
+  font-size: 16px;
+  font-weight: 100;
+  color: white;
+  margin: 5px auto 50px auto;
+}
+footer .signup {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer .signup input {
+  width: 529px;
+  height: 100%;
+  background-color: #f56b88;
+  border: none;
+  color: rgb(238, 67, 103);
+  font-size: 16px;
+  padding-left: 15px;
+}
+footer .signup ::-webkit-input-placeholder {
+  color: rgb(197, 197, 197);
+  opacity: 1;
+  font-family: Gill;
+}
+footer .signup ::-moz-placeholder {
+  color: rgb(197, 197, 197);
+  opacity: 1;
+  font-family: Gill;
+}
+footer .signup :-ms-input-placeholder {
+  color: rgb(197, 197, 197);
+  opacity: 1;
+  font-family: Gill;
+}
+footer .signup ::-ms-input-placeholder {
+  color: rgb(197, 197, 197);
+  opacity: 1;
+  font-family: Gill;
+}
+footer .signup ::placeholder {
+  color: rgb(197, 197, 197);
+  opacity: 1;
+  font-family: Gill;
+}
+footer .signup .button {
+  width: 167px;
+  height: 100%;
+  background-color: white;
+  font-family: Gill;
+  color: #EE4367;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 20px;
+  letter-spacing: 2px;
+}
+footer .socialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 25px;
+  margin: auto;
+  width: 10%;
+}
+footer .socialmedia .fb {
+  width: 30px;
+  height: 30px;
+  background-color: #EE4367;
+}
+footer .socialmedia .ig {
+  height: 30px;
+  width: 30px;
+  background-color: #EE4367;
+}
+footer .socialmedia .twi {
+  width: 30px;
+  height: 30px;
+  background-color: #EE4367;
+}
+footer .page-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 15px auto 10px auto;
+  width: 450px;
+}
+footer .page-links a {
+  z-index: 999;
+}
+footer p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFFFFF;
+  font-family: Gill;
+  font-size: 12px;
+  margin: 20px auto auto auto;
+  color: #c3c3c3;
+}
+
+@media (max-width: 1000px) {
+  footer .signup {
+    padding: 0 50px;
+  }
+  footer .socialmedia {
+    margin: auto;
+    width: 150px;
+  }
+}
+.gallery {
+  max-width: 980px;
+  min-height: 378px;
+  margin: 150px auto 0 auto;
+}
+.gallery span {
+  font-size: 25px;
+  font-family: Gill;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-bottom: solid 3px black;
+  padding-right: 100px;
+  padding-bottom: 20px;
+}
+.gallery .gallery-images {
+  margin-top: 50px;
+}
+.gallery .gallery-images div {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.gallery .gallery-images .rowone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+.gallery .gallery-images .rowone .imageone {
+  width: 489px;
+  height: 187px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 209, 64, 0.7))), url(/images/1.png);
+  background-image: linear-gradient(rgba(255, 209, 64, 0.7) rgba(255, 209, 64, 0.7)), url(/images/1.png);
+}
+.gallery .gallery-images .rowone .imagetwo {
+  width: 187px;
+  height: 187px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 67, 103, 0.7))), url(/images/2.jpeg);
+  background-image: linear-gradient(rgba(238, 67, 103, 0.7) rgba(238, 67, 103, 0.7)), url(/images/2.jpeg);
+}
+.gallery .gallery-images .rowone .imagethree {
+  width: 265px;
+  height: 187px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 173, 105, 0.7))), url(/images/3.jpg);
+  background-image: linear-gradient(rgba(8, 173, 105, 0.7) rgba(8, 173, 105, 0.7)), url(/images/3.jpg);
+}
+.gallery .gallery-images .rowtwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 150px;
+}
+.gallery .gallery-images .rowtwo .image1 {
+  width: 603px;
+  height: 306px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(84, 13, 110, 0.7))), url(/images/4.jpg);
+  background-image: linear-gradient(rgba(84, 13, 110, 0.7) rgba(8, 173, 105, 0.7)), url(/images/4.jpg);
+}
+.gallery .gallery-images .rowtwo .image2 {
+  width: 355px;
+  height: 306px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(59, 206, 171, 0.7))), url(/images/5.png);
+  background-image: linear-gradient(rgba(59, 206, 171, 0.7) rgba(8, 173, 105, 0.7)), url(/images/5.png);
+}
+
+@media (max-width: 950px) {
+  .gallery span {
+    margin: auto;
+    display: table;
+    padding-right: 0;
+  }
+  .gallery .gallery-images .rowone {
+    display: block;
+  }
+  .gallery .gallery-images .rowone .imageone {
+    margin: 0 auto 20px auto;
+    width: 400px;
+  }
+  .gallery .gallery-images .rowone .imagetwo {
+    margin: 0 auto 20px auto;
+    width: 400px;
+  }
+  .gallery .gallery-images .rowone .imagethree {
+    margin: 0 auto 20px auto;
+    width: 400px;
+  }
+  .gallery .gallery-images .rowtwo {
+    display: block;
+  }
+  .gallery .gallery-images .rowtwo .image1 {
+    margin: 0 auto 20px auto;
+    width: 400px;
+  }
+  .gallery .gallery-images .rowtwo .image2 {
+    margin: 0 auto 20px auto;
+    width: 400px;
+  }
+}

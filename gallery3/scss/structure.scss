@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 16px;
+}
+
+@font-face {
+    font-family: Gillbold;
+    src: url(fonts/GillSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: Gillbolditalic;
+    src: url(fonts/GillSans-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: Gillitalic;
+    src: url(fonts/GillSans-Italic.ttf);
+}
+
+@font-face {
+    font-family: GillLight;
+    src: url(fonts/GillSans-Light.ttf);
+}
+
+@font-face {
+    font-family: GillLightitalic;
+    src: url(fonts/GillSans-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: Gillsemibold;
+    src: url(fonts/GillSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Gillsemibolditalic;
+    src: url(fonts/GillSans-SemiBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: Gillultrabold;
+    src: url(fonts/GillSans-UltraBold.ttf);
+}
+
+@font-face {
+    font-family: Gill;
+    src: url(fonts/GillSans.ttf);
+}
+
+@font-face {
+    font-family: Serifbold;
+    src: url(fonts/PTSerif-Bold.ttf);
+}
+
+@font-face {
+    font-family: Serifbolditalic;
+    src: url(fonts/PTSerif-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: Serifitalic;
+    src: url(fonts/PTSerif-Italic.ttf);
+}
+
+@font-face {
+    font-family: Serifreg;
+    src: url(fonts/PTSerif-Regular.ttf);
+}
